@@ -1,35 +1,13 @@
-import logo from './components/assets/images/logo.svg';
 import './components/assets/css/App.css'
-import MyComponent from './components/MyComponent.js';
-const printInfo = (name,lastname,age) =>{
-const info = (
-  <div>
-    <h2>Hi!, My name is {name} {lastname}</h2>
-    <h3>I'm {age} years old, I'm young right?</h3>
-  </div>
-);
-return info;
+import HeaderComponent from './components/HeaderComponent.js';
+import SliderComponent from './components/SliderComponent.js';
 
-}
+
 function App() {
   return (
     <div className="App">
-      <MyComponent></MyComponent>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to JEJE.
-        </p>
-        {printInfo('Santiago','Maldonado',21)}
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HeaderComponent/>
+      <SliderComponent/>
     </div>
   );
 }
