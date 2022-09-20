@@ -25,7 +25,7 @@ class HeaderComponent extends Component {
                                 <a href="formulario.html">Form</a>
                             </li>
                             <li>
-                                <a href="#">About Me</a>
+                                <a href="/">About Me</a>
                             </li>
                         </ul>
                     </nav>
