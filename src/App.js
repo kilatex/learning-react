@@ -1,6 +1,6 @@
 import logo from './components/assets/images/logo.svg';
 import './components/assets/css/App.css'
-
+import MyComponent from './components/MyComponent.js';
 const printInfo = (name,lastname,age) =>{
 const info = (
   <div>
@@ -14,6 +14,7 @@ return info;
 function App() {
   return (
     <div className="App">
+      <MyComponent></MyComponent>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
