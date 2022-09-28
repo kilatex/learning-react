@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './components/assets/css/index.css';
 import App from './App';
-import FormView from './FormView';
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
@@ -12,11 +11,11 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
+    element: <App section="articles"/>,
   },
   {
     path: "/form",
-    element: <FormView/>,
+    element: <App section="form"/>,
 
   },
 ]);

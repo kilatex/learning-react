@@ -5,12 +5,13 @@ import CenterComponent from './components/CenterComponent.js';
 import FooterComponent from './components/FooterComponent.js';
 
 
-function App() {
+function App(props) {
+  const section = props.section
   return (
     <div className="App">
       <HeaderComponent/>
       <SliderComponent/>
-      <CenterComponent/>
+      <CenterComponent section={section}/>
       <FooterComponent/>
     </div>
   );

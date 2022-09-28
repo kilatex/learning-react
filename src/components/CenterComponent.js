@@ -1,16 +1,37 @@
-import React,{Component} from "react";
+import React from "react";
 import ContentComponent from "./ContentComponent";
+import FormComponent from "./FormComponent";
 import SidebarComponent from "./SidebarComponent";
-class CenterComponent extends Component{
-    render(){
-        return(
-            <div className="center">
-                <ContentComponent/>
-                <SidebarComponent/>
-               <div className="clearfix"></div>
-            </div>
-        );
+
+const CenterComponent = (props) => {
+    let section;
+    switch (props.section) {
+        case 'articles':
+            section = (
+                <ContentComponent />
+            );
+            break;
+
+        case 'form':
+            section = (
+                <FormComponent />
+            )
+            break;
+        default:
+            section = (
+                <ContentComponent />
+            );
+            break;
     }
+
+
+    return (
+        <div className="center">
+            {section}
+            <SidebarComponent />
+            <div className="clearfix"></div>
+        </div>
+    );
 }
 
 export default CenterComponent;
