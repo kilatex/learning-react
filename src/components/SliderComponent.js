@@ -1,12 +1,12 @@
 import React from "react";
 
-const SliderComponent = () =>{
+const SliderComponent = (props) =>{
+    const text = props.section == "articles" ? 'Articles List' : props.section == 'form' ?  'Form View' : 'React Course';
     return(
         <div id="slider" className="slider-big">
-            <h1>Welcome to this Basic blog, it's just to learn react</h1>
+            <h1>{text}</h1>
             <a href="/" className="btn-white">Go to My Github</a>
         </div>
     );
 }
-
 export default SliderComponent;

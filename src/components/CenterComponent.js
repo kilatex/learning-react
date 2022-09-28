@@ -7,24 +7,15 @@ const CenterComponent = (props) => {
     let section;
     switch (props.section) {
         case 'articles':
-            section = (
-                <ContentComponent />
-            );
+            section = (<ContentComponent />);
             break;
-
         case 'form':
-            section = (
-                <FormComponent />
-            )
+            section = (<FormComponent />)
             break;
         default:
-            section = (
-                <ContentComponent />
-            );
+            section = (<ContentComponent />);
             break;
     }
-
-
     return (
         <div className="center">
             {section}
