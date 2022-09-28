@@ -17,16 +17,16 @@ const HeaderComponent = () =>{
                 <nav id="menu">
                     <ul>
                         <li>
-                        <Link to="/">Home</Link>
+                            <Link to="/">Home</Link>
                         </li>
                         <li>
-                            <a href="blog.html">Blog</a>
+                            <Link to="/blog">Blog</Link>
                         </li>
                         <li>
-                        <Link to="/form">Form</Link>
+                            <Link to="/form">Form</Link>
                         </li>
                         <li>
-                        <Link to="about">About Us</Link>
+                            <Link to="/about">About Us</Link>
                         </li>
                     </ul>
                 </nav>
