@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './components/assets/css/index.css';
 import App from './App';
+import ErrorPage from './ErrorPage';
 import Blog from './Blog';
 import reportWebVitals from './reportWebVitals';
 import {
@@ -13,6 +14,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App section="articles"/>,
+    errorElement: <ErrorPage />,
   },
   {
     path: "/form",
