@@ -1,5 +1,6 @@
 import React from "react";
 import getArticles from "../getArticles";
+
 const ArticlesComponent = () => {
     const articles = getArticles.map((article) =>
         <article key={article.id} className="article-item" id="article-template">

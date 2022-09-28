@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './components/assets/css/index.css';
 import App from './App';
+import Blog from './Blog';
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <App section="about"/>,
+  },
+  {
+    path: "/blog",
+    element: <Blog/>,
   },
 ]);
 
