@@ -1,19 +1,23 @@
 import React from "react";
-
+import getArticles from "../getArticles";
 const ArticlesComponent = () => {
+    const articles = getArticles.map((article) =>
+        <article key={article.id} className="article-item" id="article-template">
+            <div className="image-wrap">
+                <img alt="Paisaje" src={article.img} />
+            </div>
+            <h2>{article.title}</h2>
+            <span className="date">
+                {article.time} ago
+            </span>
+            <a href="/">Read more</a>
+            <div className="clearfix"></div>
+        </article>
+    );
+
     return (
         <div id="articles">
-            <article className="article-item" id="article-template">
-                <div className="image-wrap">
-                    <img alt="Paisaje" />
-                </div>
-                <h2>New Post</h2>
-                <span className="date">
-                    5 minutes ago
-                </span>
-                <a href="/">Read more</a>
-                <div className="clearfix"></div>
-            </article>
+            {articles}
         </div>
     );
 }
